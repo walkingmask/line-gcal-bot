@@ -16,23 +16,18 @@ LINE Bot and Google Calendar with GAE/Go
 
 ## Usage
 
-1. Install [direnv](https://github.com/direnv/direnv) (e.g. brew install direnv)
-1. Register Google Cloud Platform
-1. Create new project and note project's ID
-1. Register LINE Messaging API(LMA) and edit Webhook URL (e.g. https://gae-project-id.appspot.com/callback)
-1. Note LMA's "Channel Secret" and "Channel Access Token"
-1. Store your LMA's QR code as qrcode.png
-1. Install sdk (e.g. brew install app-engine-go-64 )
-1. Clone this repository
-1. go get libraries
-1. Move qrcode.png to app/img/
-1. Edit app/index.html
-1. Create "line.env"
-1. goapp deploy -application <gae-project-id> -version 1
+[Here](https://github.com/walkingmask/line-gcal-bot/wiki/Usage)
+[日本語](https://github.com/walkingmask/line-gcal-bot/wiki/Usage_ja)
 
-## line.env
+## Function
 
-```text:line.env
-LINE_BOT_CHANNEL_SECRET=<Channel Secret>
-LINE_BOT_CHANNEL_TOKEN=<Channel Access Token>
-```
+- Monitoring the change of the registered gcal
+- Confirming the schedule of the day in the morning
+  - cron.yaml
+- Replaying the schedule of the day for all users actions such a message, sticker...
+
+## TODO
+
+- Create functions
+- Slove the management of dependent libraries
+
