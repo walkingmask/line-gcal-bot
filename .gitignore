@@ -1,0 +1,6 @@
+.DS_Store
+pkg/
+src/
+img/
+line.env
+*.sh
